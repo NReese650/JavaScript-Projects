@@ -15,3 +15,9 @@ function myFunction() {
     sentence += " a lot from this book!";   //This function uses the += concatenate operator
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+
+function clickText() {                              //Defining a function and naming it
+    var nor = "The Starks";                     //Defining a variable and giving it a string value
+    document.getElementById("Button_Text3").innerHTML = nor;
+}
