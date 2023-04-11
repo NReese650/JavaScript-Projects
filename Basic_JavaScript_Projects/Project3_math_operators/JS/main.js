@@ -66,4 +66,17 @@ function generateRandomNumber(min, max) {
     var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     document.getElementById("Math9").innerHTML = "The random number is: " + randomNumber;
   }
-  
+
+
+//Creating a dictionary
+function my_dictionary() {
+    var Animal = {
+        Species:"Dog",
+        Color:"Black",
+        Breed:"Labrador",
+        Age:5,
+        Sound:"Bark!",
+
+    };
+    document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}
