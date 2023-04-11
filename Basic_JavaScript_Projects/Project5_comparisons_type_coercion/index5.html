@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JS5/main5.js"></script>
+
+        <!--My page was starting to get a little long-->
+        <style>                     
+            .column1 {
+                display: inline-block;
+                float:left;
+                width: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .column2 {
+                display: inline-block;
+                float: right;
+                width: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+
+            }
+        </style>
+    </head>
+<br>
+<br>
+<br>
+    <body>
+        <div class="column1">
+            <p id="string_type" onclick="type_of()">Click here for the output of typeof "Word"</p>  <!--Calling in a function that displays what type of string "word" is-->
+            <br>
+            <br>
+            <br>
+            <p id="string" onclick="type_of()">Click here for the output of typeof 3</p> <!--Calling in a function that displays what type of string 3 is-->
+            <br>
+            <br>
+            <br>
+            <p id="Coercion" onclick="type_of()">Click here for the coerced output of "Word" + 3</p>    <!--Calling a function that displays the coerced output of two different string types-->
+            <br>
+            <br>
+            <br>
+            <p id="NoDef" onclick="not_a_number()">Click here for output of 0/0</p> <!--Calling a function that displays a value that is not a number-->
+            <br>
+            <br>
+            <br>
+            <p id="BeTrue" onclick="what_are_you()">A string value is not a number</p>  <!--Calling a function that displays whether the value is a number or not-->
+            <br>
+            <br>
+            <br>
+            <p id="BeFalse" onclick="what_are_you()">A number is not a number</p>   <!--Calling a function that displays whether the value is a number or not-->
+            <br>
+            <br>
+            <br>
+            <p id="upperLimit" onclick="large_numbers()">Buzz Lightyear goes to: </p> <!--Calling a function that displays infinity-->
+            <br>
+            <br>
+            <br>
+            <p id="lowerLimit" onclick="large_numbers()">Buzz Lightyear does not go to: </p> <!--Calling a function that displays negative infinity-->
+            <br>
+            <br>
+            <br>
+            <p id="MustBe" onclick="only_two_possibilites()">Is 500 &gt; 1? Click here to find out</p>  <!--Calling a funciton to compare two values and show the result-->
+            <br>
+            <br>
+            <br>
+            <p id="CantBe" onclick="only_two_possibilites()">Is 500 &lt; 2? Click here to find out</p>  <!--Calling a funciton to compare two values and show the result-->
+            <br>
+            <br>
+            <br>
+            <p id="indeed" onclick="is_it_true()">Does 10 = 10? Click here to find out</p>  <!--Calling a function to show if two values equal each other. This one is true-->
+            <br>
+            <br>
+            <br>
+            <p id="notIndeed" onclick="is_it_true()">Does 10 = 100? Click here to find out</p>  <!--Calling a function to show if two values equal each other. This one is false-->
+            <br>
+            <br>
+            <br>
+            <p id="confirm" onclick="are_words_true()">Is San Francisco, CA the same city as San Francisco in the bay area?</p> <!--Calling a function to show if two data pieces are equal in value and type. In this scenario, they are-->
+            <br>
+            <br>
+            <br>
+            <p id="deny" onclick="are_words_true()">Is San Francisco, CA the same city as Portland, OR?</p> <!--Calling a funciton to show if two data pieces are equal in value and type. In this scenario, they are not-->
+            <br>
+            <br>
+            <br>
+            <p id="denySimilar" onclick="are_words_true()">Is 50 the same as fifty in computer world?</p><!--Showing if two data pieces are equal. These pieces are the same value but different data types-->
+            <br>
+            <br>
+            <br>
+            <p id="denyAgain" onclick="are_words_true()">Is San Francisco, CA the same as the number 50</p><!--Showing if two data pieces are equal. These pieces are different values and different data types-->
+        </div>
+
+        <div class="column2">
+            <p id="confirm" onclick="are_words_true()">Is San Francisco, CA the same city as San Francisco in the bay area?</p> <!--Calling a function to show if two data pieces are equal in value and type. In this scenario, they are-->
+            <br>
+            <br>
+            <br>
+            <p id="deny" onclick="are_words_true()">Is San Francisco, CA the same city as Portland, OR?</p> <!--Calling a funciton to show if two data pieces are equal in value and type. In this scenario, they are not-->
+            <br>
+            <br>
+            <br>
+            <p id="denySimilar" onclick="are_words_true()">Is 50 the same as fifty in computer world?</p><!--Showing if two data pieces are equal. These pieces are the same value but different data types-->
+            <br>
+            <br>
+            <br>
+            <p id="denyAgain" onclick="are_words_true()">Is San Francisco, CA the same as the number 50</p><!--Showing if two data pieces are equal. These pieces are different values and different data types-->
+            <br>
+            <br>
+            <br>
+            <p id="andOperatorFal" onclick="logical_operators()">50 is greater than 100 AND 25 is greater than 100</p><!--Using the AND operator to display a false-->
+            <br>
+            <br>
+            <br>
+            <p id="andOperatorTru" onclick="logical_operators()">50 is less than 100 AND 25 is less than 100</p><!--Using the AND operator to display a true-->
+            <br>
+            <br>
+            <br>
+            <p id="orOperatorFal" onclick="logical_operators()">50 is greater than 100 OR 25 is greater than 100</p><!--Using the OR operator to display a false-->
+            <br>
+            <br>
+            <br>
+            <p id="orOperatorTru" onclick="logical_operators()">50 is less than 100 AND 25 is less than 100</p>     <!--Using the OR operator to display a true-->
+            <br>
+            <br>
+            <br>
+            <p id="notOperatorFal" onclick="logical_operators()">50 is less than 100 (NOT)</p>  <!--Using the NOT operator to display a false-->
+            <br>
+            <br>
+            <br>
+            <p id="notOperatorTru" onclick="logical_operators()">25 is greater than 100 (NOT)</p>  <!--Using the NOT operator to display a true-->
+
+       
+        </div>
+    </body>
+    
+
+
+</html>
