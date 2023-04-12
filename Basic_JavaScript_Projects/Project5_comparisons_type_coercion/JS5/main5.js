@@ -71,3 +71,11 @@ function logical_operators() {
     document.getElementById("notOperatorFal").innerHTML = !(X < Y);   //Using the NOT operator to display a false
     document.getElementById("notOperatorTru").innerHTML = !(Z > Y);   //Using the NOT operator to display a true
 }
+
+//Ternary Operators
+function Ride_Function() {
+    var Height, Can_Ride;
+    Height = document.getElementById("Height").value;
+    Can_Ride = (Height < 52) ? "You are too short":"You are tall enough";
+    document.getElementById("Ride").innerHTML = Can_Ride + " to ride.";
+}
