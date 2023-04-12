@@ -9,7 +9,7 @@ function my_dictionary() {
         Sound:"Woof!",
 
     };
-    delete Breed;           //Deleting a variable
+    delete Animal.Breed;           //Deleting a variable
     document.getElementById("Dictionary").innerHTML = Animal.Sound;     //Establishing a method to call a variable
-    document.getElementById("Dictionary2").innerHTML = Breed;           //Establishing a method to call a deleted variable
+    document.getElementById("Dictionary2").innerHTML = Animal.Breed;           //Establishing a method to call a deleted variable
 }
