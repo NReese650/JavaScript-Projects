@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JS7/main7.js"></script>
+
+        <style>                     
+            .column1 {
+                float:left;
+                width: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .column2 {
+                float: right;
+                width: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+
+            }
+        </style>
+    </head>
+<br>
+<br>
+<br>
+    <body>
+        <!--This is using a global variable and other value-->
+           <p id="Number1" onclick="Add_numbers_1()">58 + X, X = 942 </p>
+        <br>
+        <br>
+        <br>
+        <!--This is using a global variable and a local variable-->
+            <p id="Number2" onclick="Add_numbers_1()">Y + X, X = 942 Y = 783</p>
+        <br>
+        <br>
+        <br>
+        <!--This is using a local variable in different function. Shows in console log that the variable is not defined-->
+            <p id="Number3" onclick="Add_numbers_2()">Y + X, X = 942 Y = 783</p>
+        <br>
+        <br>
+        <br>
+        <!--calling in If statement function-->
+            <p id="Greeting" onclick="get_Date()">Click here</p>
+        <br>
+        <br>
+        <br>
+        <!--calling in If else statement function-->
+            <label for="age">Enter your age:</label>    <!--place for user to input value-->
+            <input type="number" id="age" name="age">   <!--user input being defined-->
+            <button onclick="check_age()">Submit</button>  <!--user input value is used in if/else function-->
+            <p id="result"></p>
+        <br>
+        <br>
+        <br>
+        <!--Else if statment-->
+            <p id="Time_of_day">
+                <button onclick="Time_function()">Click here to get the time</button>
+            </p>
+    </body>
+    
+
+
+</html>
