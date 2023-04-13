@@ -35,7 +35,7 @@ function Vehicle(Make, Model, Year, Color) {
     } 
 
 //Creating a function using a new keyword
-    function myFunction() {
+    function myFunction2() {
         document.getElementById("New_and_This").innerHTML = "Emily drives a " + Emily.Vehicle_Color + "-colored " + Emily.Vehicle_Model + " manufactured in " + Emily.Vehicle_Year;
     }
 
