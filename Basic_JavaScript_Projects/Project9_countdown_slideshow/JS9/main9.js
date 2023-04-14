@@ -1,3 +1,26 @@
+function countdown() {                                //This line starts the countdown function
+    var seconds = document.getElementById("seconds").value;    //This line sets a variable called "seconds" to the value of an input field with an ID of "seconds"
+
+    function tick() {                                  //This line starts a new function called "tick"
+        seconds = seconds - 1;                         //This line subtracts 1 from the "seconds" variable each time the function is called
+        timer.innerHTML = seconds;                     //This line updates the HTML content of an element called "timer" to display the current value of the "seconds" variable
+        var time = setTimeout(tick, 1000);             //This line sets a timer for 1000 milliseconds (1 second) and calls the "tick" function again after the timer expires
+        if (seconds == -1) {                           //This line checks if the "seconds" variable has reached -1
+            alert("Time's up!");                       //If the "seconds" variable has reached -1, this line displays an alert message that says "Time's up!"
+            clearTimeout(time);                       //This line stops the timer from calling the "tick" function again
+            timer.innerHTML = "";                      //This line clears the HTML content of the "timer" element
+        }
+    }
+    tick();                                             //This line calls the "tick" function for the first time to start the countdown
+}
+
+
+
+
+
+
+
+
 // Initialize slideIndex to 1
 let slideIndex = 1;
 
