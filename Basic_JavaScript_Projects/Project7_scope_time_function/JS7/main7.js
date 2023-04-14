@@ -23,7 +23,7 @@ function check_age() {      //If statement in an age function
     if (age < 18) {         //Establishes if statement
       document.getElementById("result").innerHTML = "Sorry, you are not old enough to enter.";  
     } 
-    else if (age >= 18 && age <= 21) {
+    else if (age >= 18 && age < 21) {
         document.getElementById("result").innerHTML = "You are old enough to enter, but you cannot drink."; //Establishes else/if statment
     }
     else {
