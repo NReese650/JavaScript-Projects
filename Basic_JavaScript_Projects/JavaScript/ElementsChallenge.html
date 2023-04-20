@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML DOM Example</title>
+</head>
+<body>
+	<h1 id="heading">Hello, World!</h1>
+
+	<p id="text">This is an example of using JavaScript to manipulate the DOM.</p>
+
+	<button onclick="changeText()">Click me!</button>
+
+	<script>
+		function changeText() {
+			document.getElementById("text").innerHTML = "The text has been changed!";
+		}
+	</script>
+</body>
+</html>

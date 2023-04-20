@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <button id="myButton">Click Me</button>
+        <p id="myParagraph">This is a paragraph.</p>
+        <script>
+            $(document).ready(function() {
+                $('#myButton').click(function() {
+                    $('#myParagraph').fadeOut(1000);
+                });
+            });
+        </script>
+    </body>
+</html>
