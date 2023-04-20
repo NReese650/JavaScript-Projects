@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+                <!-- Include the jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
 
     <body>
+        <!-- Add a button element with an ID of "myButton" -->
         <button id="myButton">Click Me</button>
+        <!-- Add a paragraph element with an ID of "myParagraph" -->        
         <p id="myParagraph">This is a paragraph.</p>
+        <!-- Add some jQuery code that runs when the document is ready -->
         <script>
             $(document).ready(function() {
+                // Add a click event handler to the button element with an ID of "myButton"
                 $('#myButton').click(function() {
+                // Add a fadeOut effect to the paragraph element with an ID of "myParagraph"
                     $('#myParagraph').fadeOut(1000);
                 });
             });
