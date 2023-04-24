@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Get Stuff Done</title>
+        <link rel="stylesheet" href="css/todo.css">
+    </head>
+
+    <body>
+        <div>
+            <input id="task"><button id="add">Add Item</button>
+            <hr>
+            <div id="todos"></div>
+
+<br>
+            <script src="js/todo.js"></script>
+        </div>
+
+        <div>
+            <p id="person"></p>
+            <script>
+                var person = {name: "Nick", lname: "Reese", species: "human"};
+                var JSONstring = JSON.stringify(person);
+                document.getElementById("person").innerHTML = JSONstring;
+            </script>
+        </div>
+    <br>
+        <div>
+            <p id="dog"></p>
+            <script>
+                var doggo = '{"name": "Chewy", "age": "14", "breed": "dachshund"}';
+                var JSONstring = JSON.parse(doggo);
+                document.getElementById("dog").innerHTML = JSONstring.name + " the " + JSONstring.breed;
+            </script>
+        </div>
+    <br>
+    <div>
+        <p id="cat"></p>
+        <script>
+            localStorage.setItem("Name", "Garfield");
+            document.getElementById("cat").innerHTML = localStorage.getItem("Name");
+        </script>
+    </div>
+    </body>
+
+    <footer>
+        <p>Created by Nick Reese 2023</p>
+      </footer>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Popup.css">
+    <script src="JS/Challenge.js" defer></script>
+</head>
+
+<body>
+
+    <h3 id="form-challenge">Form Challenge</h3>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()">
+            <label for="name">Name</label><br>
+                <input type="text" id="uName" name="Name"><br>
+            <label for="number">Phone Number</label><br>
+                <input type="tel" id="uNumber" name="Phone"><br><br>
+            
+                <input type="submit" value="Submit">
+        </form>
+<br>
+<br>
+        <button id="open-form-btn">Open Form</button>
+
+        <div id="contact-form-container">
+        <form id="contact-form">
+            <h2>Contact Us</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+            <button id="close-form-btn" type="button">Close</button>
+        </form>
+        </div>
+    <hr>
+<br>
+        <h1 id="animation-challenge">Animation Challenge</h1>
+
+<br>
+        <p><img class="zoom-effect" src="images/sunrise.jpg" alt="Image not found" style="width: 25%;"></p>
+<br>
+
+    <div class="slideshow-container">
+        <div class="slideshow-slide">
+            <img src="images/Thumb/thumb_2.jpg" alt="Slide 1">
+        </div>
+        <div class="slideshow-slide">
+            <img src="images/Thumb/thumb_3.jpg" alt="Slide 2">
+        </div>
+        <div class="slideshow-slide">
+            <img src="images/Thumb/thumb_4.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+
+    <br>
+
+    <!-- Sticky Contact Button -->
+    <div class="sticky-contact-btn">
+        <button id="open-contact-form-btn">Contact Us</button>
+    </div>
+
+    <!-- Confirmation Form -->
+    <div id="confirmation-form-container">
+        <form id="confirmation-form">
+        <h2>Are you sure you want to self destruct?</h2>
+        <button type="button" id="confirm-btn">Yes</button>
+        <button type="button" id="cancel-btn">No</button>
+        </form>
+    </div>
+
+    <!-- Link to Form Challenge -->
+    <p><a href="#form-challenge">Go to Form Challenge</a></p>
+
+    <!-- Link to Animation Challenge -->
+    <p><a href="#animation-challenge">Go to Animation Challenge</a></p>
+</body>
+
+</html>

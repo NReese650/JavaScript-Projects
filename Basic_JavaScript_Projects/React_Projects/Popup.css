@@ -1,0 +1,212 @@
+/*Creating pop up menu */
+#contact-form-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#contact-form h2 {
+  margin-top: 0;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact-form button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#contact-form button[type="submit"] {
+  background-color: #4CAF50;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#contact-form button[type="button"] {
+  background-color: #f44336;
+}
+
+#contact-form button[type="button"]:hover {
+  background-color: #da190b;
+}
+
+/* Creating animation */
+h1 {
+    width: 150px;
+    height: 75px;
+    background: greenyellow;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+/*Image zoom*/
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.zoom-effect{
+	animation: zoominoutsinglefeatured 15s forwards;
+}
+
+
+/*Automatic slideshow*/
+
+/* Set a fixed size for the images in the slideshow */
+.slideshow-slide img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  /* Hide all slides by default */
+  .slideshow-slide {
+    display: none;
+  }
+  
+  /* Show the active slide */
+  .slideshow-slide.active {
+    display: block;
+  }
+  
+  /* Center the images horizontally and vertically */
+  .slideshow-container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+  }
+
+  .slideshow-slide :active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+  /* Sticky Contact Button */
+.sticky-contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .sticky-contact-btn button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Confirmation Form */
+  #confirmation-form-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #confirmation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  #confirmation-form h2 {
+    margin-top: 0;
+  }
+  
+  #confirmation-form button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #confirmation-form button[type="button"] {
+    background-color: #f44336;
+  }
+  
+  #confirmation-form button[type="button"]:hover {
+    background-color: #da190b;
+  }
+  

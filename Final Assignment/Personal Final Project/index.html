@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Nicholas Reese</title>
+        <link rel="stylesheet" type="text/css" href="css/newStyle.css">
+        <script src="js/portfolio.js" defer></script>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!--Video text-->
+        <div class="white_text">
+            <div>
+                <h2>  My name is Nicholas Reese. 
+                Welcome to my portfolio website</h2>
+            </div>
+        </div>
+
+ <!-- Slideshow section added -->
+ <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="Slideshow_Container">
+            <!-- Slide 1 of 5 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="media/images/moi.jpg" alt="Picture of yourself">
+                <div class="text">I'm available to assist you on your project!</div>
+            </div>
+            <!-- Slide 2 of 5 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="media/images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+            </div>
+            <!-- Slide 3 of 5 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="media/images/Python.png" alt="Python logo">
+                <div class="text">the popular programming language Python,</div>
+            </div>
+            <!-- Slide 4 of 5 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="media/images/SQL_and_Database(1).jpg" alt="SQL logo"> 
+                <div class="text">back end development, databases and SQL.</div>
+            </div>
+            <!-- Slide 5 of 5 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="media/images/portland.jpg" alt="Replace with a picture of your choosing"> 
+                <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
+
+        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+    </div>
+</div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="media/images/sunrise.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software development student. I enjoy learning about computer science and applying it to real world projects.
+                    <br>I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and training and gathering experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am currently a student, but I would love to work with you on your next project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/NReese650" target="_blank">Nicholas Reese Github Profile</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/NReese650" target="_blank"><img src="media/images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+          <!--LinkedIN section-->
+          <div class="Row" id="LinkedIN">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="media/images/linkedIn.png" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    Join my professional network.
+                    <br>Check out my <a href="https://www.linkedin.com/in/nicholas-reese-053304163/" target="_blank">LinkedIn profile</a>
+                    <br>
+                    <br>I am currently a student, but I would love to meet likeminded people interested in technology.
+                </p>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Created by Nicholas Reese 2023</p>
+                <br>
+            </p>
+
+            <!-- Contact form -->
+            <div id="Contact" class="center">
+                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+                <div class="form-popup" id="myForm" style="display: none;">
+                    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--  https://formspree.io/ -->
+                        <h2>Contact</h2>
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>		
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+            
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+        </footer>
+    </body>
+</html>
